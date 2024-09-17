@@ -3,13 +3,15 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.11.35222.181
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebApi", "WebApi\WebApi.csproj", "{B1A3DDE2-1E5E-4F3D-AA99-ED066519B7F8}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WebApi", "WebApi\WebApi.csproj", "{B1A3DDE2-1E5E-4F3D-AA99-ED066519B7F8}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Entities", "Entities\Entities.csproj", "{B453EC4F-4819-41FB-938A-A6583115AF6B}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Entities", "Entities\Entities.csproj", "{B453EC4F-4819-41FB-938A-A6583115AF6B}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Repositories", "Repositories\Repositories.csproj", "{3B182AB2-ACD5-4ADB-8EEE-CCE896E085DD}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Repositories", "Repositories\Repositories.csproj", "{3B182AB2-ACD5-4ADB-8EEE-CCE896E085DD}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Services", "Services\Services.csproj", "{8C871509-4300-4C84-BBF1-8F3663EBB9F5}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Services", "Services\Services.csproj", "{8C871509-4300-4C84-BBF1-8F3663EBB9F5}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Presentation", "Presentation\Presentation.csproj", "{9161D936-790A-4519-B534-2358BD0DE7CC}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -33,6 +35,10 @@ Global
 		{8C871509-4300-4C84-BBF1-8F3663EBB9F5}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{8C871509-4300-4C84-BBF1-8F3663EBB9F5}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{8C871509-4300-4C84-BBF1-8F3663EBB9F5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9161D936-790A-4519-B534-2358BD0DE7CC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9161D936-790A-4519-B534-2358BD0DE7CC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9161D936-790A-4519-B534-2358BD0DE7CC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9161D936-790A-4519-B534-2358BD0DE7CC}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

@@ -71,3 +71,10 @@ C:\Users\baris\Desktop\BTKWebApi\Proje\BTKProje\WebApi\obj\Debug\net6.0\refint\W
 C:\Users\baris\Desktop\BTKWebApi\Proje\BTKProje\WebApi\obj\Debug\net6.0\WebApi.pdb
 C:\Users\baris\Desktop\BTKWebApi\Proje\BTKProje\WebApi\obj\Debug\net6.0\WebApi.genruntimeconfig.cache
 C:\Users\baris\Desktop\BTKWebApi\Proje\BTKProje\WebApi\obj\Debug\net6.0\ref\WebApi.dll
+C:\Users\baris\Desktop\BTKWebApi\Proje\BTKProje\WebApi\bin\Debug\net6.0\Services.dll
+C:\Users\baris\Desktop\BTKWebApi\Proje\BTKProje\WebApi\bin\Debug\net6.0\Services.pdb
+C:\Users\baris\Desktop\BTKWebApi\Proje\BTKProje\WebApi\bin\Debug\net6.0\Microsoft.DotNet.PlatformAbstractions.dll
+C:\Users\baris\Desktop\BTKWebApi\Proje\BTKProje\WebApi\bin\Debug\net6.0\Microsoft.Extensions.DependencyModel.dll
+C:\Users\baris\Desktop\BTKWebApi\Proje\BTKProje\WebApi\bin\Debug\net6.0\Newtonsoft.Json.dll
+C:\Users\baris\Desktop\BTKWebApi\Proje\BTKProje\WebApi\bin\Debug\net6.0\Presentation.dll
+C:\Users\baris\Desktop\BTKWebApi\Proje\BTKProje\WebApi\bin\Debug\net6.0\Presentation.pdb
