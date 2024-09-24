@@ -6,15 +6,16 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using Entities.Models;
+using AutoMapper;
 
 namespace Services
 {
     public class ServiceManager : IServiceManager
     {
         private readonly Lazy<IBookService>  _bookService;
-        public ServiceManager(IRepositoryManager repositoryManager)
+        public ServiceManager(IRepositoryManager repositoryManager,ILoggerService logger , IMapper mapper)
         {
-            _bookService = new Lazy<IBookService>(() => new BookManager(repositoryManager));
+            _bookService = new Lazy<IBookService>(() => new BookManager(repositoryManager,logger, mapper));
                 
         }
 

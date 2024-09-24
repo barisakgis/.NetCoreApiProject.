@@ -1,5 +1,8 @@
-﻿using Entities.Models;
+﻿using Entities.DataTransferObject;
+using Entities.Exceptions;
+using Entities.Models;
 using Microsoft.AspNetCore.Mvc;
+using Presentation.ActionFilters;
 using Services.Contracts;
 using System;
 using System.Collections.Generic;
@@ -9,6 +12,7 @@ using System.Threading.Tasks;
 
 namespace Presentation.Controllers
 {
+    [ServiceFilter(typeof(LogFilterAttribute))]  
     [ApiController]
     [Route("api/books")]
     public class BooksController : ControllerBase
@@ -29,134 +33,64 @@ namespace Presentation.Controllers
         }
 
         [HttpGet]
-        public IActionResult GetAllBook()
+        public async Task< IActionResult> GetAllBookAsync()
         {
-            try
-            {
-
-                var books = _manager.BookService.GetAllBooks(false);  // trackchanges için false verdik
+              
+                var books = await _manager.BookService.GetAllBooksAsync(false);  // trackchanges için false verdik
                 return Ok(books);
-            }
-            catch (Exception ex)
-            {
-
-                throw new Exception(ex.Message);
-            }
-
+             
 
         }
 
 
-        [HttpGet(" {id:int}")]
-        public IActionResult GetOneBook([FromRoute(Name = "id")] int id)
-        {
-
+        [HttpGet("{id:int}")]
+        public async Task< IActionResult> GetOneBookAsync([FromRoute(Name = "id")] int id)
+        { 
             //  _repositoryContext.Books.Where(b=>b.Id.Equals(id)).SingleOrDefault();
-            try
-            {
-                var book = _manager
+              
+                var book = await _manager
                     .BookService
-                    .GetOneBookById(id, false);
-
-                if (book is null)
-                {
-
-
-                    return NotFound();
-
-
-                }
-
+                    .GetOneBookByIdAsync(id, false);
+             
                 return Ok(book);
 
-
-            }
-            catch (Exception ex)
-            {
-                throw new Exception(ex.Message);
-
-            }
-
-
-
-
+             
         }
 
+
+        [ServiceFilter(typeof(ValidationFilterAttribute))]
         [HttpPost]
-        public IActionResult CreateOneBook([FromBody] Book book)
-        {
-            try
-            {
-                if (book is null)
-                {
-                    return BadRequest(); // 400
-                }
-
-                _manager.BookService.CreateOneBook(book);
-
-
+        public  async Task< IActionResult> CreateOneBookAsync([FromBody] BookDtoForInsertion bookDto)
+        { 
+              var book=  await _manager.BookService.CreateOneBookAsync(bookDto);
+             
                 return StatusCode(201, book);
-
-
-            }
-            catch (Exception ex)
-            {
-
-                throw new Exception(ex.Message);
-            }
-
+             
 
         }
 
 
+       
+        [ServiceFilter(typeof (ValidationFilterAttribute) )]
         [HttpPut(" {id:int}")]
-        public IActionResult UpdateOneBook([FromRoute(Name = "id")] int id, [FromBody] Book book)
-        {
-            try
-            {
-                if (book is null)
-                {
-                    return BadRequest(); // 400
-                }
-
-
-                _manager.BookService.UpdateOneBook(id, book, true);
+        public async Task<IActionResult> UpdateOneBookAsync([FromRoute(Name = "id")] int id, [FromBody] BookDtoForUpdate bookDto)
+        { 
+                  
+               await  _manager.BookService.UpdateOneBookAsync(id, bookDto, false);
 
                 return NoContent(); //204
-
-            }
-            catch (Exception ex)
-            {
-
-                throw new Exception(ex.Message);
-            }
-
-
+             
         }
 
         [HttpDelete(" {id:int}")]
-        public IActionResult DeleteOneBook([FromRoute(Name = "id")] int id)
+        public async Task<IActionResult> DeleteOneBookAsync([FromRoute(Name = "id")] int id)
         {
-            try
-            {
-
-
-
-                _manager.BookService.DeleteOneBook(id, false);
+            
+               await _manager.BookService.DeleteOneBookAsync(id, false);
 
 
                 return NoContent();
-
-
-            }
-            catch (Exception ex)
-            {
-
-                throw new Exception(ex.Message);
-            }
-
-
-
+             
 
         }
 

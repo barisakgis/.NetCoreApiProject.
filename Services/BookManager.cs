@@ -1,4 +1,7 @@
-﻿using Entities.Models;
+﻿using AutoMapper;
+using Entities.DataTransferObject;
+using Entities.Exceptions;
+using Entities.Models;
 using Repositories.Contracts;
 using Services.Contracts;
 using System;
@@ -12,62 +15,80 @@ namespace Services
     public class BookManager : IBookService
     {
         private readonly IRepositoryManager _manager;
+        private readonly ILoggerService _logger;
 
-        public BookManager(IRepositoryManager manager)
+        private readonly IMapper  _mapper;
+
+        public BookManager(IRepositoryManager manager, ILoggerService logger, IMapper mapper)
         {
             _manager = manager;
+            _logger = logger;
+           _mapper = mapper;
         }
 
-        public Book CreateOneBook(Book book)
+        public async Task<BookDto> CreateOneBookAsync(BookDtoForInsertion bookDto)
         {
-            if(book is null)
-            {
-                throw new ArgumentNullException(nameof(book));
-            }
-
-
-           _manager.Book.CreateOneBook(book);
-            _manager.Save();
-            return book;
+           
+             var entity = _mapper.Map<Book>(bookDto);
+           _manager.Book.CreateOneBook(entity);
+           await _manager.SaveAsync();
+            return _mapper.Map<BookDto>(entity);
         }
 
-        public void DeleteOneBook(int id, bool trackChanges)
-        {
-            var entity = _manager.Book.GetOneBookById(id, trackChanges);
-            if (entity is null)
-                throw new Exception($"book with id {id} could not found.");
+        public async Task DeleteOneBookAsync(int id, bool trackChanges)
+        { 
+            var entity = await GetOneBookByIdAndCheckExists(id, trackChanges);
 
             _manager.Book.DeleteOneBook(entity);
-            _manager.Save();
+            await _manager.SaveAsync();
 
         }
 
-        public IEnumerable<Book> GetAllBooks(bool trackChanges)
+        public async Task< IEnumerable<BookDto>> GetAllBooksAsync(bool trackChanges)
         {
-            return _manager.Book.GetAllBooks(trackChanges);
+            var books= await _manager.Book.GetAllBooksAsync(trackChanges);
+            return _mapper.Map<IEnumerable<BookDto>>(books);
         }
 
-        public Book GetOneBookById(int id, bool trackChanges)
+        public async Task< BookDto> GetOneBookByIdAsync(int id, bool trackChanges)
         {
-            return  _manager.Book.GetOneBookById(id,trackChanges);
+             var book = await GetOneBookByIdAndCheckExists(id,trackChanges);
+
+            return _mapper.Map<BookDto>(book);
+
         }
 
-        public void UpdateOneBook(int id, Book book,bool trackChanges)
+        public async Task UpdateOneBookAsync(int id, BookDtoForUpdate bookDto,bool trackChanges)
         {
-            var entity = _manager.Book.GetOneBookById(id, trackChanges);
-            if (entity is null)
-                throw new Exception($"book with id {id} could not found.");
 
-            if (book is null)
-            {
-                throw new ArgumentNullException(nameof(book));
-              }
+            //if (entity is null)
+            //{
+            //    string msg = $"book with id {id} could not found.";
+            //    _logger.LogInfo(msg);
+            //    throw new Exception(msg);
 
-            entity.Title = book.Title;  
-            entity.Price = book.Price;
+            //}
+            var entity = await GetOneBookByIdAndCheckExists(id, trackChanges);
+             
+            //mapping
+            //entity.Title = book.Title;  
+            //entity.Price = book.Price;
+
+            entity = _mapper.Map<Book>(bookDto);
 
             _manager.Book.UpdateOneBook(entity);
-            _manager.Save();
+            await _manager.SaveAsync();
+        }
+
+        private async Task<Book> GetOneBookByIdAndCheckExists ( int id,bool trackChanges)
+        {
+            var entity = await _manager.Book.GetOneBookByIdAsync(id, trackChanges);
+            if (entity is null)
+            {
+                throw new BookNotFoundException(id);
+            }
+
+            return entity;
         }
     } 
 }

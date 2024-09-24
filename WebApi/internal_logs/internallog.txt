@@ -1,0 +1,85 @@
+2024-09-17 23:21:54.1967 Info Message Template Auto Format enabled
+2024-09-17 23:21:54.2391 Info Adding target FileTarget(Name=logfile)
+2024-09-17 23:21:54.2534 Info Validating config: TargetNames=logfile, ConfigItems=12, FilePath=C:\Users\baris\Desktop\BTKWebApi\Proje\BTKProje\WebApi\nlog.config
+2024-09-17 23:24:51.6628 Info AppDomain Shutting down. LogFactory closing...
+2024-09-17 23:24:51.6791 Info LogFactory has been closed.
+2024-09-18 20:55:56.6001 Info Message Template Auto Format enabled
+2024-09-18 20:55:56.6805 Info Adding target FileTarget(Name=logfile)
+2024-09-18 20:55:56.7034 Info Validating config: TargetNames=logfile, ConfigItems=12, FilePath=C:\Users\baris\Desktop\BTKWebApi\Proje\BTKProje\WebApi\nlog.config
+2024-09-18 21:04:37.8655 Info Message Template Auto Format enabled
+2024-09-18 21:04:37.8968 Info Adding target FileTarget(Name=logfile)
+2024-09-18 21:04:37.9109 Info Validating config: TargetNames=logfile, ConfigItems=12, FilePath=C:\Users\baris\Desktop\BTKWebApi\Proje\BTKProje\WebApi\nlog.config
+2024-09-18 21:10:45.6481 Info Message Template Auto Format enabled
+2024-09-18 21:10:45.7285 Info Adding target FileTarget(Name=logfile)
+2024-09-18 21:10:45.7285 Info Validating config: TargetNames=logfile, ConfigItems=12, FilePath=C:\Users\baris\Desktop\BTKWebApi\Proje\BTKProje\WebApi\nlog.config
+2024-09-18 21:11:01.0874 Info Message Template Auto Format enabled
+2024-09-18 21:11:01.1204 Info Adding target FileTarget(Name=logfile)
+2024-09-18 21:11:01.1344 Info Validating config: TargetNames=logfile, ConfigItems=12, FilePath=C:\Users\baris\Desktop\BTKWebApi\Proje\BTKProje\WebApi\nlog.config
+2024-09-18 21:17:47.2763 Info AppDomain Shutting down. LogFactory closing...
+2024-09-18 21:17:47.3047 Info LogFactory has been closed.
+2024-09-18 21:40:51.0401 Info Message Template Auto Format enabled
+2024-09-18 21:40:51.0728 Info Adding target FileTarget(Name=logfile)
+2024-09-18 21:40:51.0893 Info Validating config: TargetNames=logfile, ConfigItems=12, FilePath=C:\Users\baris\Desktop\BTKWebApi\Proje\BTKProje\WebApi\nlog.config
+2024-09-18 21:53:29.3302 Info AppDomain Shutting down. LogFactory closing...
+2024-09-18 21:53:29.3559 Info LogFactory has been closed.
+2024-09-21 12:24:01.1934 Info Message Template Auto Format enabled
+2024-09-21 12:24:01.2395 Info Adding target FileTarget(Name=logfile)
+2024-09-21 12:24:01.2548 Info Validating config: TargetNames=logfile, ConfigItems=12, FilePath=C:\Users\baris\Desktop\BTKWebApi\Proje\BTKProje\WebApi\nlog.config
+2024-09-21 12:37:19.0363 Info Message Template Auto Format enabled
+2024-09-21 12:37:19.1652 Info Adding target FileTarget(Name=logfile)
+2024-09-21 12:37:19.1885 Info Validating config: TargetNames=logfile, ConfigItems=12, FilePath=C:\Users\baris\Desktop\BTKWebApi\Proje\BTKProje\WebApi\nlog.config
+2024-09-21 12:37:27.6289 Info Message Template Auto Format enabled
+2024-09-21 12:37:27.6679 Info Adding target FileTarget(Name=logfile)
+2024-09-21 12:37:27.6845 Info Validating config: TargetNames=logfile, ConfigItems=12, FilePath=C:\Users\baris\Desktop\BTKWebApi\Proje\BTKProje\WebApi\nlog.config
+2024-09-21 12:42:06.6504 Info AppDomain Shutting down. LogFactory closing...
+2024-09-21 12:42:06.6579 Info LogFactory has been closed.
+2024-09-21 12:42:28.4497 Info Message Template Auto Format enabled
+2024-09-21 12:42:28.4853 Info Adding target FileTarget(Name=logfile)
+2024-09-21 12:42:28.5001 Info Validating config: TargetNames=logfile, ConfigItems=12, FilePath=C:\Users\baris\Desktop\BTKWebApi\Proje\BTKProje\WebApi\nlog.config
+2024-09-21 12:44:56.7340 Info AppDomain Shutting down. LogFactory closing...
+2024-09-21 12:44:56.7340 Info LogFactory has been closed.
+2024-09-21 12:53:24.6217 Info Message Template Auto Format enabled
+2024-09-21 12:53:24.6570 Info Adding target FileTarget(Name=logfile)
+2024-09-21 12:53:24.6713 Info Validating config: TargetNames=logfile, ConfigItems=12, FilePath=C:\Users\baris\Desktop\BTKWebApi\Proje\BTKProje\WebApi\nlog.config
+2024-09-21 13:21:27.4437 Info AppDomain Shutting down. LogFactory closing...
+2024-09-21 13:21:27.4555 Info LogFactory has been closed.
+2024-09-21 13:21:36.2330 Info Message Template Auto Format enabled
+2024-09-21 13:21:36.2685 Info Adding target FileTarget(Name=logfile)
+2024-09-21 13:21:36.2835 Info Validating config: TargetNames=logfile, ConfigItems=12, FilePath=C:\Users\baris\Desktop\BTKWebApi\Proje\BTKProje\WebApi\nlog.config
+2024-09-21 13:22:05.6851 Info AppDomain Shutting down. LogFactory closing...
+2024-09-21 13:22:05.6851 Info LogFactory has been closed.
+2024-09-21 13:51:02.9139 Info Message Template Auto Format enabled
+2024-09-21 13:51:03.0125 Info Adding target FileTarget(Name=logfile)
+2024-09-21 13:51:03.0360 Info Validating config: TargetNames=logfile, ConfigItems=12, FilePath=C:\Users\baris\Desktop\BTKWebApi\Proje\BTKProje\WebApi\nlog.config
+2024-09-21 19:10:11.0285 Info Message Template Auto Format enabled
+2024-09-21 19:10:11.0626 Info Adding target FileTarget(Name=logfile)
+2024-09-21 19:10:11.0781 Info Validating config: TargetNames=logfile, ConfigItems=12, FilePath=C:\Users\baris\Desktop\BTKWebApi\Proje\BTKProje\WebApi\nlog.config
+2024-09-21 19:20:22.9407 Info AppDomain Shutting down. LogFactory closing...
+2024-09-21 19:20:22.9407 Info LogFactory has been closed.
+2024-09-21 19:21:21.8956 Info Message Template Auto Format enabled
+2024-09-21 19:21:21.9684 Info Adding target FileTarget(Name=logfile)
+2024-09-21 19:21:21.9901 Info Validating config: TargetNames=logfile, ConfigItems=12, FilePath=C:\Users\baris\Desktop\BTKWebApi\Proje\BTKProje\WebApi\nlog.config
+2024-09-21 19:30:29.4649 Info Message Template Auto Format enabled
+2024-09-21 19:30:29.5495 Info Adding target FileTarget(Name=logfile)
+2024-09-21 19:30:29.5755 Info Validating config: TargetNames=logfile, ConfigItems=12, FilePath=C:\Users\baris\Desktop\BTKWebApi\Proje\BTKProje\WebApi\nlog.config
+2024-09-22 17:49:04.6495 Info Message Template Auto Format enabled
+2024-09-22 17:49:04.7328 Info Adding target FileTarget(Name=logfile)
+2024-09-22 17:49:04.7582 Info Validating config: TargetNames=logfile, ConfigItems=12, FilePath=C:\Users\baris\Desktop\BTKWebApi\Proje\BTKProje\WebApi\nlog.config
+2024-09-23 20:53:43.3831 Info Message Template Auto Format enabled
+2024-09-23 20:53:43.4174 Info Adding target FileTarget(Name=logfile)
+2024-09-23 20:53:43.4382 Info Validating config: TargetNames=logfile, ConfigItems=12, FilePath=C:\Users\baris\Desktop\BTKWebApi\Proje\BTKProje\WebApi\nlog.config
+2024-09-23 21:18:46.4833 Info AppDomain Shutting down. LogFactory closing...
+2024-09-23 21:18:46.4942 Info LogFactory has been closed.
+2024-09-23 21:39:12.9116 Info Message Template Auto Format enabled
+2024-09-23 21:39:12.9455 Info Adding target FileTarget(Name=logfile)
+2024-09-23 21:39:12.9455 Info Validating config: TargetNames=logfile, ConfigItems=12, FilePath=C:\Users\baris\Desktop\BTKWebApi\Proje\BTKProje\WebApi\nlog.config
+2024-09-23 21:40:13.3172 Info AppDomain Shutting down. LogFactory closing...
+2024-09-23 21:40:13.3328 Info LogFactory has been closed.
+2024-09-23 21:40:22.1398 Info Message Template Auto Format enabled
+2024-09-23 21:40:22.1745 Info Adding target FileTarget(Name=logfile)
+2024-09-23 21:40:22.1890 Info Validating config: TargetNames=logfile, ConfigItems=12, FilePath=C:\Users\baris\Desktop\BTKWebApi\Proje\BTKProje\WebApi\nlog.config
+2024-09-23 21:40:59.2210 Info AppDomain Shutting down. LogFactory closing...
+2024-09-23 21:40:59.2384 Info LogFactory has been closed.
+2024-09-23 21:41:08.3162 Info Message Template Auto Format enabled
+2024-09-23 21:41:08.4249 Info Adding target FileTarget(Name=logfile)
+2024-09-23 21:41:08.4487 Info Validating config: TargetNames=logfile, ConfigItems=12, FilePath=C:\Users\baris\Desktop\BTKWebApi\Proje\BTKProje\WebApi\nlog.config
