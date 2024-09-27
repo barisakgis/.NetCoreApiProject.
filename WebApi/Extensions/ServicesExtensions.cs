@@ -34,6 +34,22 @@ namespace WebApi.Extensions
 
         }
 
+        public static  void ConfigureCors(this IServiceCollection services)
+        {
+            services.AddCors(optisons =>
+               {
+                   optisons.AddPolicy("CorsPolicy", builder =>
+                       builder.AllowAnyOrigin()
+                       .AllowAnyMethod()
+                       .AllowAnyHeader()
+                       .WithExposedHeaders("X-Pagination")
+
+                   );
+            
+            });
+
+        }
+
 
     }
 }
