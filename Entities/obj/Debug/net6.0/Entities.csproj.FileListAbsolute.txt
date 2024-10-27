@@ -10,3 +10,4 @@ C:\Users\baris\Desktop\BTKWebApi\Proje\BTKProje\Entities\obj\Debug\net6.0\Entiti
 C:\Users\baris\Desktop\BTKWebApi\Proje\BTKProje\Entities\obj\Debug\net6.0\refint\Entities.dll
 C:\Users\baris\Desktop\BTKWebApi\Proje\BTKProje\Entities\obj\Debug\net6.0\Entities.pdb
 C:\Users\baris\Desktop\BTKWebApi\Proje\BTKProje\Entities\obj\Debug\net6.0\ref\Entities.dll
+C:\Users\baris\Desktop\BTKWebApi\Proje\BTKProje\Entities\obj\Debug\net6.0\Entities.csproj.AssemblyReference.cache
